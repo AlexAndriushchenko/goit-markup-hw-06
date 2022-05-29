@@ -78,6 +78,7 @@
             <div class="modal-wrapper">
               <button class="modal-btn" data-modal-close>
                 <svg
+                  class="modal-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 320 512"
                   width="18"
@@ -88,6 +89,82 @@
                   />
                 </svg>
               </button>
+
+              <!-- form -->
+              <strong class="form-title"
+                >Оставьте свои данные, мы вам перезвоним</strong
+              >
+              <form class="modal-form">
+                <!-- данные пользователя -->
+                <label class="form-group">
+                  <span class="form-modal-label">Имя</span>
+                  <input
+                    class="form-modal-input"
+                    type="text"
+                    name="user-name"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </label>
+                <label class="form-group">
+                  <span class="form-modal-label">Телефон</span>
+                  <input
+                    class="form-modal-input"
+                    type="tel"
+                    name="user-phone"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </label>
+                <label class="form-group">
+                  <span class="form-modal-label">Почта</span>
+                  <input
+                    class="form-modal-input"
+                    type="email"
+                    name="user-mail"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </label>
+
+                <label class="form-group">
+                  <span class="form-modal-label">Комментарий</span>
+                  <textarea
+                    class="user-comment"
+                    name="user-comment"
+                    rows="6"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
+
+                <label class="form-checkbox">
+                  <span class="checkbox-container">
+                    <input class="checkbox" name="agreement" type="checkbox" />
+                    <svg
+                      class="checkbox-icon-checked"
+                      width="16px"
+                      height="15px"
+                    >
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <span class="checkbox-icon-unchecked"></span>
+                  </span>
+                  <span class="checkbox-label">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a
+                      class="checkbox-label-link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Условия договора</a
+                    >
+                  </span>
+                </label>
+                <button type="submit" class="hero-button">Отправить</button>
+              </form>
             </div>
           </div>
         </section>
@@ -606,6 +683,24 @@
             </li>
           </ul>
         </div>
+
+        <form class="subscribe-form">
+          <label class="subscribe-label">
+            <span class="subscribe-title">Подпишитесь на рассылку</span>
+            <input
+              type="email"
+              class="subscribe-input"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="submit" class="subscribe-btn">
+            <span class="subscribe-btn-text">Подписаться</span>
+            <svg width="24" height="24" class="subscribe-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
